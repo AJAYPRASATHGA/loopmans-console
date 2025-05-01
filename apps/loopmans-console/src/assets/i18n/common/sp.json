@@ -1,0 +1,20 @@
+{
+  "STANDARD.S.NO": "S.NO",
+  "STANDARD.ACTION": "ACCIÓN",
+  "STANDARD.CONFIRMATION": "Confirmación",
+  "STANDARD.YES": "Sí",
+  "STANDARD.NO": "No",
+  "STANDARD.NEXT": "próximo/próxima",
+  "STANDARD.BACK": "Atrás",
+  "STANDARD.SUBMIT": "Entregar",
+  "STANDARD.CANCEL": "Cancelar",
+  "STANDARD.SAVE":"Ahorrar",
+  "STANDARD.OK":"DE ACUERDO",
+  "STANDARD.EMAIL":"Correo electrónico",
+  "STANDARD.FIRST-NAME":"Nombre de pila",
+  "STANDARD.LAST-NAME":"Apellido",
+  "STANDARD.MIDDLE-NAME":"Segundo nombre",
+  "STANDARD.DOB":"Fecha de nacimiento",
+   "STANDARD.NAME":"NOMBRE",
+   "STANDARD.SELECT_ALL": "Select All"
+}

@@ -16,27 +16,48 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/loopmans-console/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
+        "allowedCommonJsDependencies": [
+          "@fortawesome/fontawesome-free",
+          "@mdi/font",
+          "primeng",
+          "bootstrap",
+          "lodash",
+          "moment",
+          "apexcharts",
+          "quill",
+          "@swimlane/ngx-datatable"
+        ],
         "assets": [
+          "apps/loopmans-console/src/assets",
           {
             "glob": "**/*",
             "input": "apps/loopmans-console/public"
           }
         ],
-        "styles": ["apps/loopmans-console/src/styles.scss"],
-        "scripts": []
+        "styles": [
+          "apps/loopmans-console/src/styles.scss",
+          "apps/loopmans-console/src/assets/icons/icofont/icofont.min.css",
+          "apps/loopmans-console/src/assets/icons/fontawesome-free-6.6.0-web/css/all.min.css",
+          "apps/loopmans-console/src/assets/styles/animate.min.css",
+          "apps/loopmans-console/src/assets/icons/MaterialDesignIcons/css/materialdesignicons.min.css",
+          "apps/loopmans-console/src/assets/bootstrap/bootstrap.min.css",
+          "node_modules/quill/dist/quill.core.css",
+          "node_modules/quill/dist/quill.snow.css"
+        ],
+        "scripts": ["node_modules/apexcharts/dist/apexcharts.min.js"]
       },
       "configurations": {
         "production": {
           "budgets": [
             {
               "type": "initial",
-              "maximumWarning": "500kb",
-              "maximumError": "1mb"
+              "maximumWarning": "5mb",
+              "maximumError": "5mb"
             },
             {
               "type": "anyComponentStyle",
-              "maximumWarning": "4kb",
-              "maximumError": "8kb"
+              "maximumWarning": "1mb",
+              "maximumError": "5mb"
             }
           ],
           "outputHashing": "all"

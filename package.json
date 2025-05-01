@@ -2,7 +2,13 @@
   "name": "@loopmans-console/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve loopmans-console",
+    "serve": "nx serve loopmans-console",
+    "build": "nx build loopmans-console",
+    "test": "nx test loopmans-console",
+    "lint": "nx lint loopmans-console"
+  },
   "private": true,
   "dependencies": {
     "@angular/common": "~19.2.0",
@@ -12,6 +18,17 @@
     "@angular/platform-browser": "~19.2.0",
     "@angular/platform-browser-dynamic": "~19.2.0",
     "@angular/router": "~19.2.0",
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@mdi/font": "^7.4.47",
+    "@primeng/themes": "^19.1.2",
+    "@swimlane/ngx-datatable": "^21.0.0-alpha.1",
+    "apexcharts": "^4.7.0",
+    "bootstrap": "^5.3.5",
+    "chart.js": "^4.4.9",
+    "ng-apexcharts": "^1.15.0",
+    "primeicons": "^7.0.0",
+    "primeng": "^19.1.2",
+    "quill": "^2.0.3",
     "rxjs": "~7.8.0",
     "zone.js": "~0.15.0"
   },

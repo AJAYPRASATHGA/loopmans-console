@@ -1,0 +1,104 @@
+::ng-deep  {
+    .p-stepper .p-stepper-header .p-stepper-action {
+        background: none !important;
+        outline-color: #F5F5F5 !important;
+    }
+    .p-stepper ul.p-stepper-nav {
+        border: 0;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+        padding:6px 9% !important;
+        margin-bottom: 0px;
+        background-color: #ffffff;
+        border-radius: 5px;
+    }
+    .p-stepper-number {
+        min-width: 2.1rem;
+        height: 2.1rem;
+        border: 1px solid #c2c9d3;
+    }
+    .p-stepper .p-stepper-header .p-stepper-action .p-stepper-title {
+        font-weight: 550;
+    }
+    .p-stepper .p-stepper-header.p-highlight .p-stepper-number {
+        background:#4099FF;
+        color: #fff;
+    }
+    
+    .p-stepper-panels {
+       margin: 0px 9.5%;
+       background: none;
+    }
+    .wizard h4.heading {
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+    .p-stepper .p-stepper-panels {
+         padding:1.5rem;
+    }
+    .p-button {
+        padding:0px;
+        background:none;
+        border:none;
+    }
+    .p-button-label {
+        font-weight: inherit;
+    }
+    .p-button .p-button-icon-left {
+        margin-right: 0px;
+        color:black;
+    }
+    .p-button .p-button-label {
+        border:none;
+    }
+    .btn-secondary .p-button  {
+        color:#00bab3;
+    }
+    /*Nested Stepper*/
+    .nestedStepper .p-stepper-nav{
+        display: none;
+    }
+     .nestedStepper .p-stepper-panels{
+        padding:0px;
+        margin:0px;
+        margin-bottom: 35px;
+    }
+    .card {
+        box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.25) !important;
+    }
+    //Completed stepper style changes
+    .p-stepper .p-disabled  {
+        opacity: 1 !important ;
+    }
+    .p-stepper .p-stepper-header .p-stepper-action[ng-reflect-highlighted="true"] .p-stepper-number {
+        background-color: #00bab3 !important; /* Change background color to green */
+        color:#fff;
+       
+    }
+    .p-stepper .p-stepper-header .p-stepper-action[ng-reflect-highlighted="true"] .p-stepper-title {
+        color: #222 !important;
+        opacity:1 !important
+    }
+    .p-overflow-hidden {
+        overflow: auto !important;
+    }
+   
+}
+
+.wizard {
+    .center-buttons {
+        display: flex;
+        justify-content: center;
+    }
+    .panel-heading {
+        margin-bottom: 20px;
+    }
+    .card {
+        background: blue;
+    }
+}
+.wizard-first {
+    background-color: none;
+}
+.wizard-parent-flow {
+    background-color: white;
+}

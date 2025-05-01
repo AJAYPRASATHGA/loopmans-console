@@ -18,7 +18,8 @@
       "@loopmans-console/Ui": ["libs/shared/Ui/src/index.ts"],
       "@loopmans-console/auth": ["libs/auth/src/index.ts"],
       "@loopmans-console/dashboard": ["libs/dashboard/src/index.ts"],
-      "@loopmans-console/service": ["libs/shared/service/service/src/index.ts"]
+      "@loopmans-console/service": ["libs/shared/service/service/src/index.ts"],
+      "@loopmans-console/shared/service": ["libs/shared/service/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

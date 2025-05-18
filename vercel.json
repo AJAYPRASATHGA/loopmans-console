@@ -1,0 +1,11 @@
+{
+    "build":[
+        {
+            "src":"package.json",
+            "use":"@vercel/node",
+            "config":{
+                "legacyPeerDeps":true
+            }
+        }
+    ]
+}

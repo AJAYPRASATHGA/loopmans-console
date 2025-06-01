@@ -1,9 +1,0 @@
-[build]
-  command = "npm install --legacy-peer-deps && nx build loopmans-console --skip-nx-cache"
-  publish = "dist/apps/loopmans-console/browser"
-  environment = { NODE_VERSION = "18.20.2" }
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200

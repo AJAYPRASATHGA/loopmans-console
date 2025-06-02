@@ -1,0 +1,81 @@
+.p-datatable .p-sortable-column.p-highlight {
+  background: #f0effe !important;
+}
+.card-view {
+  overflow-x: auto;
+  table {
+    border-spacing: 0px 10px;
+    border-collapse: separate;
+    width: calc(100% - 10px);
+    margin: -10px 5px 0px 5px;
+    table-layout: fixed;
+    min-width: 600px;
+    thead {
+      tr {
+        th {
+          background: #f0effe !important;
+          border:0 !important;
+          padding: 10px 10px !important;
+          font-weight: normal;
+          font-size: 13px;
+          text-transform: uppercase;
+          word-wrap: normal;
+          &:first-child{
+            width:60px;
+          }
+        }
+      }
+    }
+    tbody{
+        tr{
+            box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+            &:hover{
+                box-shadow: 0 0 6px 0 #bfbfbf !important;
+            }
+        }
+    }
+    tr {
+      transition: all ease-in-out 0.5s;
+      border-radius: 5px;
+      color: #222 !important;
+      td {
+        border: solid 1px #fff !important;
+        padding: 10px 10px !important;
+        background: transparent !important;
+        font-weight: 600;
+        word-wrap: break-word;
+        &:first-child {
+          border-radius: 5px 0px 0px 5px;
+        }
+        &:last-child {
+          border-radius: 0px 5px 5px 0px;
+        }
+        .badge{
+          word-wrap: break-word;
+          white-space: break-spaces;
+        }
+        a{
+          font-weight: 600;
+        }
+        span.sub-text{
+          font-weight: normal;
+          display: block;
+          font-size:12px ;
+          color: #6c757d;
+        }
+      }
+    }
+    td a.popover-btn{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        font-size: 1.35rem;
+        background: #f0effe;
+        color:#4399ff;
+        position: relative;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "loopmans-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/loopmans-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["loopmans"],
+  "// targets": "to see all targets run: nx show project loopmans-e2e --web",
+  "targets": {}
+}

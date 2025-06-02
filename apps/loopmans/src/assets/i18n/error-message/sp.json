@@ -1,0 +1,16 @@
+{
+  "ERROR.REQUIRED": "is required",
+  "ERROR.MIN.LENGTH": "At least %d characters",
+  "ERROR.NAME-REGEX": "Only space, hyphen, underscore, quote, and parentheses are allowed. Please remove other special characters.",
+  "ERROR.PHONE.NUMBER-REGEX": "At least %d characters",
+  "ERROR.EMAIL-REGEX": "At least %d characters",
+  "PAGE.CHILD.EDIT.ERROR.FIRST-NAME":"Por favor ingrese el nombre",
+  "PAGE.CHILD.EDIT.ERROR.LAST-NAME":"Por favor ingrese el apellido",
+  "ERROR.EFFECTIVE-FROM":"Por favor seleccione Fecha de vigencia desde",
+  "ERROR.INVENTORY-NAME":"Por favor ingrese el nombre del inventario",
+  "ERROR.COUNT":"Por favor ingrese el recuento",
+  "ERROR.INVENTORY-ITEM":"Por favor seleccione Artículo del Inventario",
+  "ERROR.REGION-NAME":" Por favor seleccione Región",
+  "ERROR.INSTALLATION-NAME":" Por favor seleccione Instalación",
+  "ERROR.GEO-LOCATOR-NAME":" Por favor ingrese el nombre del localizador geográfico"
+}

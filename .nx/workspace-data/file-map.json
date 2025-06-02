@@ -1,0 +1,894 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.1.2",
+  "pathMappings": {
+    "@loopsman/auth": [
+      "libs/auth/src/index.ts"
+    ],
+    "@loopsman/service": [
+      "libs/service/src/index.ts"
+    ],
+    "@loopsman/ui": [
+      "libs/shared/ui/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/cypress/plugin",
+      "options": {
+        "targetName": "e2e",
+        "openTargetName": "open-cypress",
+        "componentTestingTargetName": "component-test",
+        "ciTargetName": "e2e-ci"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "README.md",
+        "hash": "4046217729841909949"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "3462096019013144053"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "4637156562308165301"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "6870352021923392442"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "5407418692668764289"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "1483385727526483936"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "17559216753634855455"
+      },
+      {
+        "file": "package.json",
+        "hash": "1969043450882868802"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "14190528033450245732"
+      },
+      {
+        "file": "nx.json",
+        "hash": "12676316066565058955"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "11163879808779831417"
+      }
+    ],
+    "projectFileMap": {
+      "service": [
+        {
+          "file": "libs/service/README.md",
+          "hash": "2672681639680675415"
+        },
+        {
+          "file": "libs/service/eslint.config.mjs",
+          "hash": "9628975637710176443",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/service/jest.config.ts",
+          "hash": "5678409892042709592"
+        },
+        {
+          "file": "libs/service/project.json",
+          "hash": "8295144809993535979"
+        },
+        {
+          "file": "libs/service/src/index.ts",
+          "hash": "8412727066896636176"
+        },
+        {
+          "file": "libs/service/src/lib/service/service.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/service/src/lib/service/service.component.html",
+          "hash": "3507482946420505449"
+        },
+        {
+          "file": "libs/service/src/lib/service/service.component.spec.ts",
+          "hash": "12735893093297653586",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/service/src/lib/service/service.component.ts",
+          "hash": "11418316539512794329",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/service/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/service/tsconfig.json",
+          "hash": "1083278824072282325"
+        },
+        {
+          "file": "libs/service/tsconfig.lib.json",
+          "hash": "5796668385415907511"
+        },
+        {
+          "file": "libs/service/tsconfig.spec.json",
+          "hash": "2927375835638640771"
+        }
+      ],
+      "loopmans-e2e": [
+        {
+          "file": "apps/loopmans-e2e/cypress.config.ts",
+          "hash": "3027879388826461265",
+          "deps": [
+            "npm:@nx/cypress",
+            "npm:cypress"
+          ]
+        },
+        {
+          "file": "apps/loopmans-e2e/eslint.config.mjs",
+          "hash": "7267301145493616340",
+          "deps": [
+            "npm:eslint-plugin-cypress"
+          ]
+        },
+        {
+          "file": "apps/loopmans-e2e/project.json",
+          "hash": "14456446038734909751"
+        },
+        {
+          "file": "apps/loopmans-e2e/src/e2e/app.cy.ts",
+          "hash": "11034931953956380158"
+        },
+        {
+          "file": "apps/loopmans-e2e/src/fixtures/example.json",
+          "hash": "11785586596216172004"
+        },
+        {
+          "file": "apps/loopmans-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/loopmans-e2e/src/support/commands.ts",
+          "hash": "6408592624158157338"
+        },
+        {
+          "file": "apps/loopmans-e2e/src/support/e2e.ts",
+          "hash": "1054106023200826784"
+        },
+        {
+          "file": "apps/loopmans-e2e/tsconfig.json",
+          "hash": "4332380883180617610"
+        }
+      ],
+      "ui": [
+        {
+          "file": "libs/shared/ui/README.md",
+          "hash": "3098996868279451883"
+        },
+        {
+          "file": "libs/shared/ui/eslint.config.mjs",
+          "hash": "6219511726200060807",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/shared/ui/jest.config.ts",
+          "hash": "16896033037392730238"
+        },
+        {
+          "file": "libs/shared/ui/project.json",
+          "hash": "14344298763784933429"
+        },
+        {
+          "file": "libs/shared/ui/src/index.ts",
+          "hash": "1382743820790675656"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/ui/ui.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/ui/ui.component.html",
+          "hash": "11089220566535924882"
+        },
+        {
+          "file": "libs/shared/ui/src/lib/ui/ui.component.spec.ts",
+          "hash": "2887951508933850500",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/shared/ui/src/lib/ui/ui.component.ts",
+          "hash": "1553613057921369559",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/shared/ui/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/shared/ui/tsconfig.json",
+          "hash": "1948416733966154877"
+        },
+        {
+          "file": "libs/shared/ui/tsconfig.lib.json",
+          "hash": "6020606002228403423"
+        },
+        {
+          "file": "libs/shared/ui/tsconfig.spec.json",
+          "hash": "7159729809249402441"
+        }
+      ],
+      "loopmans": [
+        {
+          "file": "apps/loopmans/eslint.config.mjs",
+          "hash": "16756400681144203361",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "apps/loopmans/jest.config.ts",
+          "hash": "11222703174589139460"
+        },
+        {
+          "file": "apps/loopmans/project.json",
+          "hash": "11180503338805665965"
+        },
+        {
+          "file": "apps/loopmans/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/loopmans/src/app/app.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/loopmans/src/app/app.component.html",
+          "hash": "11987652264972370457"
+        },
+        {
+          "file": "apps/loopmans/src/app/app.component.spec.ts",
+          "hash": "871607574188398311",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/loopmans/src/app/app.component.ts",
+          "hash": "1182006701978247797",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/loopmans/src/app/app.config.ts",
+          "hash": "6137170128205633588",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/loopmans/src/app/app.routes.ts",
+          "hash": "6185150965714414910",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/loopmans/src/app/nx-welcome.component.ts",
+          "hash": "6915951339808487223",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/loopmans/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/loopmans/src/assets/bootstrap/bootstrap.min.css",
+          "hash": "9320870932505430581"
+        },
+        {
+          "file": "apps/loopmans/src/assets/fonts/nunito-sans-v5-latin/nunito-sans-v5-latin-regular.eot",
+          "hash": "8600670101076673684"
+        },
+        {
+          "file": "apps/loopmans/src/assets/fonts/nunito-sans-v5-latin/nunito-sans-v5-latin-regular.svg",
+          "hash": "14999791381730675382"
+        },
+        {
+          "file": "apps/loopmans/src/assets/fonts/nunito-sans-v5-latin/nunito-sans-v5-latin-regular.ttf",
+          "hash": "13465235777664552733"
+        },
+        {
+          "file": "apps/loopmans/src/assets/fonts/nunito-sans-v5-latin/nunito-sans-v5-latin-regular.woff",
+          "hash": "1023603250220745041"
+        },
+        {
+          "file": "apps/loopmans/src/assets/fonts/nunito-sans-v5-latin/nunito-sans-v5-latin-regular.woff2",
+          "hash": "18177526353985283915"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/camp/en.json",
+          "hash": "14006935167868940549"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/camp/sp.json",
+          "hash": "16009794439048628663"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/center/en.json",
+          "hash": "13773350280693528059"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/center/sp.json",
+          "hash": "9327649870585608093"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/child/en.json",
+          "hash": "16931148705516802668"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/child/sp.json",
+          "hash": "8018184048891996854"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/common/en.json",
+          "hash": "1180214946919925640"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/common/sp.json",
+          "hash": "18367203305141450760"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/dashboard/en.json",
+          "hash": "15546875783983111357"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/dashboard/sp.json",
+          "hash": "7800624228235529376"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/discount/en.json",
+          "hash": "17506743341925542084"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/discount/sp.json",
+          "hash": "13566290942416982916"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/error-message/en.json",
+          "hash": "17529781359899125389"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/error-message/sp.json",
+          "hash": "364699567481021801"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/error/en.json",
+          "hash": "10152773932560797713"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/error/sp.json",
+          "hash": "1389868326933519382"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/family/en.json",
+          "hash": "3047176127955334270"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/family/sp.json",
+          "hash": "13566290942416982916"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/footer/en.json",
+          "hash": "11243179611151697117"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/footer/sp.json",
+          "hash": "13332797999324637038"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/index.ts",
+          "hash": "7977983211501225950"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/left-nav/en.json",
+          "hash": "1041784905109161932"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/left-nav/sp.json",
+          "hash": "16286116447541018756"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/login/en.json",
+          "hash": "16042114830062655484"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/login/sp.json",
+          "hash": "65807787183855770"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/payments/en.json",
+          "hash": "15646373528572940948"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/payments/sp.json",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/requests/en.json",
+          "hash": "7085940276771420873"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/requests/sp.json",
+          "hash": "16087510424812900594"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/setup/en.json",
+          "hash": "488866275050013949"
+        },
+        {
+          "file": "apps/loopmans/src/assets/i18n/setup/sp.json",
+          "hash": "14862641512243496386"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/MaterialDesignIcons/css/materialdesignicons.css",
+          "hash": "7707809530751241433"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/MaterialDesignIcons/css/materialdesignicons.css.map",
+          "hash": "12182839942258774850"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/MaterialDesignIcons/css/materialdesignicons.min.css",
+          "hash": "16909067452994317015"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/MaterialDesignIcons/css/materialdesignicons.min.css.map",
+          "hash": "651474639150279226"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/MaterialDesignIcons/fonts/materialdesignicons-webfont.eot",
+          "hash": "7758984001383043603"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/MaterialDesignIcons/fonts/materialdesignicons-webfont.ttf",
+          "hash": "1949668827246249321"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/MaterialDesignIcons/fonts/materialdesignicons-webfont.woff",
+          "hash": "3821802579243145071"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/MaterialDesignIcons/fonts/materialdesignicons-webfont.woff2",
+          "hash": "16649915968371615745"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/fontawesome-free-6.6.0-web/css/all.min.css",
+          "hash": "13903620350821141383"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/fontawesome-free-6.6.0-web/css/fontawesome.min.css",
+          "hash": "8484165796524402584"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/fontawesome-free-6.6.0-web/webfonts/fa-brands-400.ttf",
+          "hash": "6892449108231499758"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/fontawesome-free-6.6.0-web/webfonts/fa-brands-400.woff2",
+          "hash": "1949482036514713102"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.ttf",
+          "hash": "12136383198451064415"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/fontawesome-free-6.6.0-web/webfonts/fa-regular-400.woff2",
+          "hash": "8228439771751780832"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.ttf",
+          "hash": "7571219699013704789"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/fontawesome-free-6.6.0-web/webfonts/fa-solid-900.woff2",
+          "hash": "11169532293168578766"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/fontawesome-free-6.6.0-web/webfonts/fa-v4compatibility.ttf",
+          "hash": "18064962932871147901"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/fontawesome-free-6.6.0-web/webfonts/fa-v4compatibility.woff2",
+          "hash": "5882066926606610775"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/icofont/fonts/icofont.eot",
+          "hash": "14734494474449899331"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/icofont/fonts/icofont.svg",
+          "hash": "4339163035511761529"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/icofont/fonts/icofont.ttf",
+          "hash": "7176460250530898775"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/icofont/fonts/icofont.woff",
+          "hash": "16757515971558632583"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/icofont/fonts/icofont.woff2",
+          "hash": "5247175630642073250"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/icofont/icofont.css",
+          "hash": "18189808076674180076"
+        },
+        {
+          "file": "apps/loopmans/src/assets/icons/icofont/icofont.min.css",
+          "hash": "16717069642305204199"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/1coreLoginLogo.png",
+          "hash": "11849295972373827792"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/1corelogo-opti.png",
+          "hash": "11620432366065756185"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/1corelogo.png",
+          "hash": "8695011139946970837"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/1corelogowhite-opti.png",
+          "hash": "1228836272315546924"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/Error.png",
+          "hash": "3880539027813941797"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/NoCreditCard.png",
+          "hash": "4242511984696184137"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/NoDocuments.png",
+          "hash": "8197110675591788651"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/USNavy.png",
+          "hash": "9331457589357093816"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/activity/activity_tl.png",
+          "hash": "9641999518306198547"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/activity/bottles_tl.png",
+          "hash": "4931985188724143624"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/activity/bringin_tl.png",
+          "hash": "2554176584051546740"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/activity/diaper_tl.png",
+          "hash": "1834382339780877739"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/activity/food_tl.png",
+          "hash": "6021690259227558809"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/activity/homework_tl.png",
+          "hash": "155349698448759099"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/activity/incident_tl.png",
+          "hash": "7524345520135076986"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/activity/medicine_tl.png",
+          "hash": "6632553634671689571"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/activity/nap_tl.png",
+          "hash": "11053199508893984497"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/activity/note_tl.png",
+          "hash": "18380916691258241376"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/background/HomeBg.png",
+          "hash": "8902436060441297614"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/batchDiscounts/close.png",
+          "hash": "7501553663733423084"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/batchDiscounts/coach.png",
+          "hash": "12725404512741025539"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/batchDiscounts/points.png",
+          "hash": "9514946056416780995"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/chip.png",
+          "hash": "9662571417509364077"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/double-tick-blue.svg",
+          "hash": "17658087995329186741"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/double.svg",
+          "hash": "10224555270321489624"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/login-bg.jpg",
+          "hash": "12678115818254795311"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/notifcation-status/double-tick-blue.svg",
+          "hash": "17658087995329186741"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/notifcation-status/double.svg",
+          "hash": "10224555270321489624"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/notifcation-status/single.svg",
+          "hash": "8520529042508097250"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/single.svg",
+          "hash": "8520529042508097250"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/spain.png",
+          "hash": "58213518622377257"
+        },
+        {
+          "file": "apps/loopmans/src/assets/images/us.png",
+          "hash": "18206328093852432540"
+        },
+        {
+          "file": "apps/loopmans/src/assets/styles/animate.min.css",
+          "hash": "4339963698456499508"
+        },
+        {
+          "file": "apps/loopmans/src/assets/styles/custom-style.scss",
+          "hash": "2681276593588039000"
+        },
+        {
+          "file": "apps/loopmans/src/assets/styles/default-style.scss",
+          "hash": "3616765543284039727"
+        },
+        {
+          "file": "apps/loopmans/src/assets/styles/non-mandatory-field-style.scss",
+          "hash": "17316042679846775503"
+        },
+        {
+          "file": "apps/loopmans/src/assets/styles/shared-style.scss",
+          "hash": "11635504676224595301"
+        },
+        {
+          "file": "apps/loopmans/src/assets/styles/table-style.scss",
+          "hash": "16192980035400931475"
+        },
+        {
+          "file": "apps/loopmans/src/assets/styles/wizard-style.scss",
+          "hash": "11797448459158983845"
+        },
+        {
+          "file": "apps/loopmans/src/assets/vendor/bootstrap.min.css",
+          "hash": "3798076190989122124"
+        },
+        {
+          "file": "apps/loopmans/src/assets/vendor/chart.js",
+          "hash": "6892293426774021365"
+        },
+        {
+          "file": "apps/loopmans/src/assets/vendor/fontawesome-all.min.css",
+          "hash": "4355584815600947649"
+        },
+        {
+          "file": "apps/loopmans/src/assets/vendor/fontawesome-all.min.js",
+          "hash": "8867154369525836618"
+        },
+        {
+          "file": "apps/loopmans/src/assets/vendor/mdi.min.css",
+          "hash": "7973365255380739069"
+        },
+        {
+          "file": "apps/loopmans/src/assets/vendor/ngx-datatable-material.css",
+          "hash": "16437337942053173809"
+        },
+        {
+          "file": "apps/loopmans/src/assets/vendor/ngx-datatable.css",
+          "hash": "10259908449405729084"
+        },
+        {
+          "file": "apps/loopmans/src/assets/vendor/quill-core.css",
+          "hash": "17361918086708029872"
+        },
+        {
+          "file": "apps/loopmans/src/assets/vendor/quill-snow.css",
+          "hash": "11059742426188003463"
+        },
+        {
+          "file": "apps/loopmans/src/assets/vendor/quill.js",
+          "hash": "4593080920313404908"
+        },
+        {
+          "file": "apps/loopmans/src/index.html",
+          "hash": "17783445388209863331"
+        },
+        {
+          "file": "apps/loopmans/src/main.ts",
+          "hash": "16635586463787978962",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/loopmans/src/styles.css",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/loopmans/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "apps/loopmans/tsconfig.app.json",
+          "hash": "8365644956319658761"
+        },
+        {
+          "file": "apps/loopmans/tsconfig.editor.json",
+          "hash": "1055794200401717100"
+        },
+        {
+          "file": "apps/loopmans/tsconfig.json",
+          "hash": "6424220500541951295"
+        },
+        {
+          "file": "apps/loopmans/tsconfig.spec.json",
+          "hash": "2927375835638640771"
+        }
+      ],
+      "auth": [
+        {
+          "file": "libs/auth/README.md",
+          "hash": "9370648284768385907"
+        },
+        {
+          "file": "libs/auth/eslint.config.mjs",
+          "hash": "9628975637710176443",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/auth/jest.config.ts",
+          "hash": "2454897979899206125"
+        },
+        {
+          "file": "libs/auth/project.json",
+          "hash": "3687035062681619518"
+        },
+        {
+          "file": "libs/auth/src/index.ts",
+          "hash": "6959015935353446184"
+        },
+        {
+          "file": "libs/auth/src/lib/auth/auth.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/auth/src/lib/auth/auth.component.html",
+          "hash": "4340194693546777985"
+        },
+        {
+          "file": "libs/auth/src/lib/auth/auth.component.spec.ts",
+          "hash": "5188219778723573435",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/auth/src/lib/auth/auth.component.ts",
+          "hash": "4709037065020938081",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/auth/src/test-setup.ts",
+          "hash": "1917999429567095215",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/auth/tsconfig.json",
+          "hash": "1083278824072282325"
+        },
+        {
+          "file": "libs/auth/tsconfig.lib.json",
+          "hash": "5796668385415907511"
+        },
+        {
+          "file": "libs/auth/tsconfig.spec.json",
+          "hash": "2927375835638640771"
+        }
+      ]
+    }
+  }
+}

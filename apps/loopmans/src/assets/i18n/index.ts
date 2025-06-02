@@ -1,0 +1,16 @@
+export const i18Files = [
+  { prefix: './assets/i18n/login/', suffix: '.json' },
+  { prefix: './assets/i18n/common/', suffix: '.json' },
+  { prefix: './assets/i18n/left-nav/', suffix: '.json' },
+  { prefix: './assets/i18n/footer/', suffix: '.json' },
+  { prefix: './assets/i18n/error-message/', suffix: '.json' },
+  { prefix: './assets/i18n/dashboard/', suffix: '.json' },
+  { prefix: './assets/i18n/setup/', suffix: '.json' },
+  { prefix: './assets/i18n/center/', suffix: '.json' },
+  { prefix: './assets/i18n/discount/', suffix: '.json' },
+  { prefix: './assets/i18n/family/', suffix: '.json' },
+  { prefix: './assets/i18n/child/', suffix: '.json' },
+  { prefix: './assets/i18n/error/', suffix: '.json' },
+  { prefix: './assets/i18n/requests/', suffix: '.json' },
+  { prefix: './assets/i18n/camp/', suffix: '.json' },
+];
